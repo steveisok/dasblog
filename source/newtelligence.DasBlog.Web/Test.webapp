@@ -1,0 +1,11 @@
+﻿<web-application>
+        <name>Test</name>
+        <vpath>/</vpath>
+        <path>/home/steveman/dev/dotnet/apps/dasblog-clone/source/newtelligence.DasBlog.Web</path>
+	<!-- vhost and port are ignored in xsp.exe -->
+        <vhost>localhost</vhost>
+        <vport>8082</vport>
+	<nonstop>true</nonstop>
+	<!-- <enabled> is true by default -->
+	<!-- <enabled>false</enabled> -->
+</web-application>

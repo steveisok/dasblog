@@ -1430,8 +1430,8 @@ namespace newtelligence.DasBlog.Web.Core
                     //themes = ConfigurationSettings.GetConfig("newtelligence.DasBlog.Themes") as ThemeDictionary;
                     
 					//Are we on a Mobile Device? See if we have a mobile theme and use it instead.
-					System.Web.Mobile.MobileCapabilities mobile = (System.Web.Mobile.MobileCapabilities)Request.Browser;
-					if(mobile.IsMobileDevice == true)
+					System.Web.Mobile.MobileCapabilities mobile = Request.Browser as System.Web.Mobile.MobileCapabilities;
+					if (mobile != null && mobile.IsMobileDevice == true)
 					{
 						if(themes.TryGetValue("mobile", out blogTheme) == false )
 						{

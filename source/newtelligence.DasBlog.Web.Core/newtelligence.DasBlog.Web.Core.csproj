@@ -17,7 +17,6 @@
     <DefaultClientScript>JScript</DefaultClientScript>
     <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
     <DefaultTargetSchema>IE50</DefaultTargetSchema>
-    <DelaySign>false</DelaySign>
     <OutputType>Library</OutputType>
     <RootNamespace>newtelligence.DasBlog.Web.Core</RootNamespace>
     <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
@@ -29,7 +28,7 @@
     </UpgradeBackupLocation>
     <OldToolsVersion>4.0</OldToolsVersion>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -96,7 +95,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DotNetOpenAuth">
-      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\lib\DotNetOpenAuth.dll</HintPath>
     </Reference>
     <Reference Include="System">
@@ -104,7 +102,6 @@
     </Reference>
     <Reference Include="System.configuration" />
     <Reference Include="System.Core">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
     <Reference Include="System.Data">
       <Name>System.Data</Name>
@@ -146,7 +143,7 @@
     </ProjectReference>
     <ProjectReference Include="..\WebControlCaptcha\WebControlCaptcha.vbproj">
       <Name>WebControlCaptcha</Name>
-      <Project>{FF7F1D68-352E-4FEA-A7B4-EB6C25140316}</Project>
+      <Project>{5CDD14FD-D242-46D2-B34F-78494F549AB3}</Project>
       <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
     </ProjectReference>
   </ItemGroup>
@@ -357,6 +354,6 @@
   <PropertyGroup>
     <PreBuildEvent>
     </PreBuildEvent>
-    <PostBuildEvent>if not exist "$(ProjectDir)..\newtelligence.DasBlog.Web\SiteConfig\site.config" copy "$(ProjectDir)..\newtelligence.DasBlog.Web\SiteConfig\site.config.deploy" "$(ProjectDir)..\newtelligence.DasBlog.Web\SiteConfig\site.config"</PostBuildEvent>
+    <PostBuildEvent></PostBuildEvent>
   </PropertyGroup>
 </Project>
